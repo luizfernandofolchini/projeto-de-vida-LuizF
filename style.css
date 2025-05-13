@@ -61,8 +61,13 @@
         display: block;
     }
 
+    .botao.ativo{
+        background-color: var(--botao-ativo);
+        border-bottom: 4px solid var(--verde);
+    }
+
     @media screen and (min-width: 768px){
-        .botao{
+        .botoes{
             display:flex;
         }
         .botao:first-child{
@@ -72,4 +77,3 @@
             border-radius: 0 40px 0 0 ;
         }
     }
-    
