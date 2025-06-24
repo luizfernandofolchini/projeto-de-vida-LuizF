@@ -34,17 +34,20 @@ function calculaTempo(tempoObjetivo) {
     minutos %= 60;
     horas %= 24;
 
-    if(tempoFinal>0){
-        return (dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos ");
-    }else{
-        return "Seu Tempo Acabou!"
+    if (tempoFinal > 0) {
+        return [dias, horas, minutos, segundos];
+    } else {
+        return [0, 0, 0, 0,];
     }
 
 }
 
 function atualizaCronometro() {
     for (let i = 0; i < contadores.length; i++) {
-        contadores[i].textContent = calculaTempo(tempos[i]);
+        document.getElementById("dias" + i).textContent = calculaTempo(tempos[i])[0];
+        document.getElementById("dias" + i).textContent = calculaTempo(tempos[i])[0];
+        document.getElementById("dias" + i).textContent = calculaTempo(tempos[i])[0];
+        document.getElementById("dias" + i).textContent = calculaTempo(tempos[i])[0];
     }
 
 }
